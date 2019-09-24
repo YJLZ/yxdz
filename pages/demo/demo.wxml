@@ -1,0 +1,100 @@
+<!--pages/demo/demo.wxml-->
+<view class="total">
+  <view class="six">
+    <text>\n</text> {{name}}路{{aaa}}
+  </view>
+  <view class="eleven">
+    <text>\n</text> {{lfstdname}}==>{{lestdname}}
+  </view>
+
+  <view>
+    <text class="one">首</text>
+    <text class="five">{{lfstdftime}}:{{lfstdftime1}}</text>
+    <text>\t\t\t\t\t</text>
+    <text class="two">末</text>
+    <text class="five">{{lfstdetime}}:{{lfstdetime1}}</text>
+  </view>
+  <view class="table">
+    <view class="tr">
+
+
+      <view class="tr" wx:if="{{remainno!=null&&remainno!=''}}">
+
+        <view class="tr" wx:if="{{remainno!=0}}">
+          <view class="th">{{remainno}}站</view>
+          <view class="th">{{remainno1}}站</view>
+        </view>
+
+        <view class="tr" wx:else>
+          <view class="th" style="position:relative; top:20px;font-size: 18px;" >即将到站</view>
+        </view>
+
+      </view>
+
+      <view class="tr" wx:else>
+        <view class="th"style="position:relative; top:20px;font-size: 18px;" >等待发车</view>
+      </view>
+
+      <view class="th" style="color: #20a0ff;">
+        <image class="seven" src="../../image/1.png"></image>车辆列表
+        <view style="display: inline-block; visibility: hidden;">表</view>
+      </view>
+    </view>
+  </view>
+  <view class="table">
+    <view class="tr ">
+
+
+     <view class="tr" wx:if="{{remainno!=null&&remainno!=''}}">
+
+        <view class="tr" wx:if="{{remainno!=0}}">
+          <view class="th">{{distancestation}}公里</view>
+          <view class="th">{{distancestation1}}公里</view>
+        </view>
+
+        <view class="tr" wx:else>
+          <view class="th">即将到站</view>
+        </view>
+
+      </view>
+
+      <view class="tr" wx:else>
+        <view class="th"></view>
+      </view>
+
+
+      <view class="th" style="color: #20a0ff;">
+        <image class="seven" src="../../image/2.png"></image>历史时刻表</view>
+    </view>
+  </view>
+  <view>
+  </view>
+  <view class="divLine"></view>
+  <view class='attrs' wx:for='{{message}}' wx:for-item="list" wx:for-index='key'>
+    <view>
+
+<view  wx:for='{{message1}}' wx:for-item="item" wx:for-index='key'>
+<view wx:if="{{list.sguid==item}}">
+      <image class="thirteen" src="../../image/8.png"></image>
+</view>
+
+</view>
+
+      <view wx:if="{{list.sguid==lineStandInfo}}">
+        <text class="eight" style=" border: 1px solid #f60;"></text>
+      </view>
+      <view wx:else>
+        <text class="eight"></text>
+      </view>
+      <text class="ten"></text>
+      <view wx:if="{{list.sguid==lineStandInfo}}">
+        <text class="nine" style="color:#f60">{{list.sname}}</text>
+      </view>
+      <view wx:else>
+        <text class="nine">{{list.sname}}</text>
+      </view>
+      <text>\n</text>
+    </view>
+  </view>
+
+</view>

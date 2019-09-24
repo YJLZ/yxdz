@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="five">
+  <image class="one" src="../../image/5.png"></image>
+  <text class="two">暂无线路公告</text>
+  <text class="sixteen"> > </text>
+</view>
+<view class="divLine"></view>
+<view class="four">
+  <!-- <image class="eightteen" src="../../image/7.png"></image> -->
+
+
+
+  <view class="nineteen">
+    <input type='search' placeholder="搜索" name='username' bindinput="userNameInput" style="background-image: url('../../image/7.png')"></input>
+  </view>
+  <view class="divLine1"></view>
+  <view class="ten">
+    <text class="eight">周边站点</text>
+    <button class="seventeen" bindtap='search'>
+      <text class="seven">线路查询</text>
+    </button>
+    <text class="nine">换乘查询</text>
+    <view class="divLine"></view>
+
+  </view>
+
+  <view class="eleven">附近线路</view>
+  <view class='attrs' wx:for='{{message}}' wx:for-index='key' bindtap='click' data-text='{{item}}'>
+    <image class="twelve" src="../../image/6.png"></image>
+    <text class="thirteen">{{item.lname}}路</text>
+    <text>\n</text>
+    <text class="fourteen"> {{item.ldirection}}</text>
+    <text>\n</text>
+  </view>
+</view>

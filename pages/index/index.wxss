@@ -1,0 +1,160 @@
+/**index.wxss**/
+
+.four {
+  border: 1px solid #e7e7e7;
+  flex: 1;
+}
+
+.one {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: #3eb78a;
+  padding: 0 5px 0 10px;
+  line-height: 30px;
+}
+
+.two {
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: #3eb78a;
+  padding: 0 5px 0 10px;
+  line-height: 30px;
+  position: relative;
+  bottom: 5px;
+  right: 9px;
+}
+
+.sixteen {
+  font-size: 20px;
+  width: 20px;
+  height: 8px;
+  overflow: hidden;
+  color: #3eb78a;
+  padding: 0 5px 0 10px;
+  line-height: 30px;
+  position: relative;
+  bottom: 5px;
+  left: 250px;
+}
+
+.divLine {
+  background: #ddd;
+  width: 100%;
+  height: 25rpx;
+}
+
+.divLine1 {
+  background: #ddd;
+  width: 100%;
+  height: 2rpx;
+  position: relative;
+  top: 10px;
+}
+
+.five {
+  position: relative;
+  top: 6px;
+}
+
+.nineteen input {
+  background: url(../../image/7.png) 5px center/15px 15px no-repeat #eee;
+  border-radius: 7px;
+  height: 35px;
+  position: relative;
+  top: 5px;
+  font-size: 14px;
+  width: 345px;
+  border: 1px solid #e7e7e7;
+  left: 20px;
+  padding-left: 25px;
+}
+
+.seven {
+  position: relative;
+  bottom: 5px;
+}
+
+.eight {
+  position: relative;
+  top: 27px;
+  left: 45px;
+  color: #333;
+}
+
+.nine {
+  position: relative;
+  left: 307px;
+  bottom: 21px;
+  color: #333;
+}
+
+.eleven {
+  padding: 15px;
+  font-size: 14px;
+  background: #f0f0f0;
+}
+
+.twelve {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 30px;
+  left: 25px;
+}
+
+.thirteen {
+  position: relative;
+  left: 35px;
+  top: 10px;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+
+.fourteen {
+  position: relative;
+  left: 55px;
+  top: 20px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  font-family: 'helvetica neue',
+                 arial,
+                 'hiragino sans gb',
+                 stheiti,
+                 'wenquanyi micro hei',
+                 \5FAE\8F6F\96C5\9ED1,
+                 \5B8B\4F53,
+                 sans-serif;
+}
+
+.fiveteen {
+  width: 100%;
+}
+
+.attrs {
+  border-bottom: 1px solid #ddd;
+  height: 75px;
+}
+
+.seventeen {
+  background-color: #20a0ff;
+  color: #fff;
+  font-size: 15px;
+  width: 100px;
+  height: 28px;
+  border-radius: 20px;
+  position: relative;
+  top: 5px;
+}
+
+/* .eightteen{
+  width: 15px;
+  height: 15px;
+  position: relative;
+top: 35px;
+left: 20px;
+} */
